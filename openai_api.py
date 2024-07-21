@@ -5,7 +5,7 @@ from config import openai_key
 class OpenaiApi:
     client_oa = AsyncOpenAI(
     api_key=openai_key,
-    http_client=httpx.AsyncClient(proxy="http://2KQzNJ:2MSj7e@38.170.252.179:9184")
+    http_client=httpx.AsyncClient(proxy="http://логи:пароль@ip:port")
     )#переопределяем httpx клиент, добавляя в него Канадский прокси
 
     async def gpt_chat(self, prompt):#модель gpt-3.5-turbo
